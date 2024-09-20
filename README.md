@@ -42,7 +42,7 @@ python train.py
 
 Esto iniciará el proceso de entrenamiento, configurará los hiperparámetros y guardará el modelo entrenado en la carpeta models.
 
-### 1. Realizar una Predicción
+### 2. Realizar una Predicción
 Una vez entrenado el modelo, puedes hacer una predicción sobre cualquier imagen específica ejecutando:
 
 ```bash
