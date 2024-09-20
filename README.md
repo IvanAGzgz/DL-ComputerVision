@@ -2,9 +2,7 @@
 
 Este proyecto desarrolla un modelo de **deep learning** utilizando **PyTorch** para la detección de tumores cerebrales en imágenes de resonancia magnética (MRI). El modelo clasifica las imágenes en dos categorías: **tumor** y **sin tumor**, usando un conjunto de datos proporcionado por Kaggle. La estructura del proyecto abarca desde la descarga del dataset hasta la predicción final.
 
-![Imagen con tumor](data/cancer_data/test/con_cancer/Y116.JPG)
-
-![Imagen sin tumor](data/cancer_data/test/sin_cancer/18%20no.jpg)
+![Imagen con tumor](data/cancer_data/test/con_cancer/Y116.JPG)   ![Imagen sin tumor](data/cancer_data/test/sin_cancer/18%20no.jpg)
 
 ## 📑 Tabla de Contenidos
 - [Descripción del Proyecto](#-descripción-del-proyecto)
