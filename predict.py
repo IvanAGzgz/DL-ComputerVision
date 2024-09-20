@@ -32,7 +32,7 @@ print(f"[INFO] Predicting on {IMG_PATH}")
 # Función para cargar el modelo
 def load_model(filepath=args.model_path):
   model = model_builder.TinyVGG(input_shape=3,
-                                hidden_units=10,
+                                hidden_units=128,
                                 output_shape=2).to(device)
 
   print(f"[INFO] Cargando modelo: {filepath}")                               
@@ -48,26 +48,26 @@ def predict_on_image(image_path=IMG_PATH, filepath=args.model_path):
   # Cargar la imagen y convertirla a torch.float32 (mismo tipo que el modelo)
   image = torchvision.io.read_image(str(IMG_PATH)).type(torch.float32)
 
-  # Preprocess the image to get it between 0 and 1
+  # Preprocesar la imagen para conseguir entre 0 y 1
   image = image / 255.
 
-  # Resize the image to be the same size as the model
+  # Resize en la imagen para estar al mismo size que el modelo
   transform = torchvision.transforms.Resize(size=(64, 64))
   image = transform(image) 
 
-  # Predict on image
+  # Predecir la imagen
   model.eval()
   with torch.inference_mode():
-    # Put image to target device
+    # Situarla en el target device
     image = image.to(device)
 
-    # Get pred logits
-    pred_logits = model(image.unsqueeze(dim=0)) # make sure image has batch dimension (shape: [batch_size, height, width, color_channels])
+    # Obtener logits
+    pred_logits = model(image.unsqueeze(dim=0)) 
 
-    # Get pred probs
+    # Obtener pred probs
     pred_prob = torch.softmax(pred_logits, dim=1)
 
-    # Get pred labels
+    # Obtener pred labels
     pred_label = torch.argmax(pred_prob, dim=1)
     pred_label_class = class_names[pred_label]
 
