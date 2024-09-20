@@ -4,6 +4,9 @@ Este proyecto desarrolla un modelo de **deep learning** utilizando **PyTorch** p
 
 Con tumor: 
 ![Imagen con tumor](data/cancer_data/test/con_cancer/Y116.JPG) 
+
+
+
 Sin tumor: 
 ![Imagen sin tumor](data/cancer_data/test/sin_cancer/18%20no.jpg)
 
