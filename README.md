@@ -7,7 +7,6 @@ Este proyecto desarrolla un modelo de **deep learning** utilizando **PyTorch** p
 - [Dataset](#-dataset)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Uso](#-uso)
-- [Resultados](#-resultados)
 
 ## 📝 Descripción del Proyecto
 
