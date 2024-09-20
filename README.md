@@ -38,16 +38,17 @@ Para entrenar el modelo en el conjunto de datos de entrenamiento, ejecuta el sig
 
 ```bash
 python train.py
+```
 
 Esto iniciará el proceso de entrenamiento, configurará los hiperparámetros y guardará el modelo entrenado en la carpeta models.
 
-2. Realizar una Predicción
+### 1. Realizar una Predicción
 Una vez entrenado el modelo, puedes hacer una predicción sobre cualquier imagen específica ejecutando:
 
-bash
-Copiar código
+```bash
 python predict.py --image data/test/imagen_ejemplo.jpg
+```
 Reemplaza imagen_ejemplo.jpg con la ruta de la imagen sobre la que desees realizar la predicción.
 
-📊 Resultados
+## 📊 Resultados
 El modelo predice si una imagen de resonancia magnética contiene un tumor cerebral o no. Las métricas de rendimiento del modelo y los resultados se pueden observar al final del proceso de entrenamiento.
