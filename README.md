@@ -49,6 +49,3 @@ Una vez entrenado el modelo, puedes hacer una predicción sobre cualquier imagen
 python predict.py --image data/test/imagen_ejemplo.jpg
 ```
 Reemplaza imagen_ejemplo.jpg con la ruta de la imagen sobre la que desees realizar la predicción.
-
-## 📊 Resultados
-El modelo predice si una imagen de resonancia magnética contiene un tumor cerebral o no. Las métricas de rendimiento del modelo y los resultados se pueden observar al final del proceso de entrenamiento.
