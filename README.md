@@ -1,3 +1,7 @@
+Aquí tienes el README.md actualizado con las métricas de tu modelo:
+
+---
+
 # 🧠 Brain Tumor Detection with Deep Learning (PyTorch)
 
 Este proyecto desarrolla un modelo de **deep learning** utilizando **PyTorch** para la detección de tumores cerebrales en imágenes de resonancia magnética (MRI). El modelo clasifica las imágenes en dos categorías: **tumor** y **sin tumor**, usando un conjunto de datos proporcionado por Kaggle. La estructura del proyecto abarca desde la descarga del dataset hasta la predicción final.
@@ -9,6 +13,7 @@ Este proyecto desarrolla un modelo de **deep learning** utilizando **PyTorch** p
 - [Dataset](#-dataset)
 - [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Uso](#-uso)
+- [Resultados](#-resultados)
 
 ## 📝 Descripción del Proyecto
 
@@ -49,4 +54,20 @@ Una vez entrenado el modelo, puedes hacer una predicción sobre cualquier imagen
 ```bash
 python predict.py --image data/test/imagen_ejemplo.jpg
 ```
+
 Reemplaza imagen_ejemplo.jpg con la ruta de la imagen sobre la que desees realizar la predicción.
+
+## 📊 Resultados
+
+Después de entrenar y evaluar el modelo, se obtuvieron las siguientes métricas:
+
+- **Pérdida en entrenamiento**: 0.5367
+- **Precisión en entrenamiento**: 76.75%
+- **Pérdida en prueba**: 0.5640
+- **Precisión en prueba**: 71.88%
+
+Estos resultados muestran que el modelo tiene un rendimiento aceptable, aunque hay margen de mejora para optimizar tanto la precisión en entrenamiento como en prueba.
+
+--- 
+
+Este README ahora incluye las métricas y los resultados de tu modelo de detección de tumores cerebrales.
